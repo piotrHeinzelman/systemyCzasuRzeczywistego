@@ -1,5 +1,5 @@
-hello.exe: hello.obj
-	gcc -o hello.exe hello.obj
-hello.obj: hello.asm
-		nasm -f win64 -g -F cv8 hello.asm -l hello.lst
+hello.exe: hello.o
+	gcc -o hello  hello.o -no-pie
+hello.o: hello.asm
+		nasm -f elf64 -g -F dwarf hello.asm -l hello.lst
 		
