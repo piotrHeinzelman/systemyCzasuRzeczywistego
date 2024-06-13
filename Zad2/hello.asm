@@ -1,4 +1,5 @@
-
+extern clock_gettime	
+extern _localtime
 extern printf
 section .data
 
@@ -27,6 +28,10 @@ buf2     db 20 dup 0
 fstart     db   10,13,"start: %d",10,13,0
 fend       db   "stop : %d",10,13,0
 fdelta     db   "delta: %d",10,13,0
+fcycles    db   "cykli: %d",10,13,0
+
+counter	   dq	0
+now		   db "    ",0
 
 
 
@@ -93,31 +98,50 @@ main:
 	mov rsi, space
 	call printString
 
+
+
+
+	mov rax,0
+	mov rdi, fcycles
+	mov rsi,r15
+	call printf
+
+
 	; start time
-	;call checkTime
-	mov r13 ,__POSIX_TIME__
+	
+
+    call timeToAX
+    mov r13, rax
+
 	mov rax,0
 	mov rdi, fstart
 	mov rsi,r13
 	call printf
 
 
+	mov rbx,r15
+	inc rbx
 	myLoop:
-	cmp r15,0
-	dec r15
+
+	dec rbx
+	jz myLoopEnd	
+	
+		call CRC  
 	 
-	call CRC  
-	 
-	jne myLoop
+	jmp myLoop
+	myLoopEnd:
+	
 
 	; end time
-	;call checkTime
-	mov r14 ,__POSIX_TIME__
+	call timeToAX
+    mov r14, rax
+
 	mov rax,0
-	mov rdi, fend
-	mov rsi,r13
+	mov rdi, fstart
+	mov rsi,r14
 	call printf
 	
+	; delta
 	sub r14,r13
 	mov rax,0
 	mov rdi, fdelta
@@ -441,19 +465,29 @@ parseParam:
 	
 	parseParamEnd:
 
+	mov [counter],rax
 
 ret
 
 
 global CRC
 CRC:
-
-
-
+		mov rax , 0xffffffff
+		CRCLoop:
+		dec rax
+		jnz CRCLoop
 ret
 
+ 
+ 
+global timeToAX
+timeToAX:
 
-global checkTime
-checkTime:
-	
-ret
+	call clock_gettime
+mov rax,rdi
+;	push rdi
+;	mov rax, 201
+;	xor rdi, rdi        
+;	syscall
+;	pop rdi
+ret 
