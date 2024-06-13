@@ -33,7 +33,7 @@ buf2     db 20 dup 0
 fstart     db   10,13,"start: %d",10,13,0
 fend       db   "stop : %d",10,13,0
 fdelta     db   "czas [sec]: %d",10,13,0
-fdelta_sr  db   "cykl: %d",10,13,0
+fdelta_sr  db   "cykl: %d.tys",10,13,0
 fcycles    db   "cykli: %d",10,13,0
 fresult    db   "result: 0x%X",10,13,0
 
