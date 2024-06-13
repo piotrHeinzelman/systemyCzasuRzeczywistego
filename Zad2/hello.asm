@@ -1,4 +1,7 @@
+extern rdtsc
+extern gettimeofday
 extern clock_gettime	
+extern gettimeofday
 extern _localtime
 extern printf
 section .data
@@ -29,7 +32,8 @@ bufferlen equ 0x400
 buf2     db 20 dup 0
 fstart     db   10,13,"start: %d",10,13,0
 fend       db   "stop : %d",10,13,0
-fdelta     db   "delta: %d",10,13,0
+fdelta     db   "czas [sec]: %d",10,13,0
+fdelta_sr  db   "cykl: %d",10,13,0
 fcycles    db   "cykli: %d",10,13,0
 fresult    db   "result: 0x%X",10,13,0
 
@@ -40,6 +44,8 @@ crcLow	   db   0xff;
 counter	   dq 0
 now		   db "    ",0
 
+time_sec   dq 0;     /* seconds */
+time_msec  dq 0;     /* microseconds */
 
 
 success_Read db 10,13,"OK!",10,13,0
@@ -113,8 +119,6 @@ main:
 
 
 	; start time
-	
-
     call timeToAX
     mov r13, rax
 
@@ -133,7 +137,7 @@ main:
     mov r14, rax
 
 	mov rax,0
-	mov rdi, fstart
+	mov rdi, fend
 	mov rsi,r14
 	call printf
 	
@@ -143,6 +147,31 @@ main:
 	mov rdi, fdelta
 	mov rsi,r14
 	call printf
+	
+	mov rax,r15 ; liczba cykli w RAX
+	mov rdx,0
+	mov rbx,1000
+	idiv rbx	; sek -> msek
+	
+	mov rdx,0
+	mov rbx,rax ; liczba cykli /1000 w rbx
+	mov rax,r14 ; czas w rax
+	
+	imul rax,1000 ; msek - usek
+	
+	mov rdx,0
+	idiv rbx ; w rax (czas*1000)/(liczba cykli/1000)
+	
+	mov rdi, fdelta_sr
+	mov rsi,rbx
+	mov rax,0
+	call printf
+	
+	
+	 
+	
+	
+
 	
 	
 	call exit
@@ -432,7 +461,7 @@ global parseParam ; rsi
 parseParam:
 
 	mov rax, 0
-	mov cx,0x0a
+	mov rcx,0x0a
 	
 	parseParamLoop:
 		cmp byte[rsi],0
@@ -443,7 +472,7 @@ parseParam:
 	mov rbx,0
 	mov bl, byte[rsi]
 	sub bl, 0x030
-	mul cx
+	mul rcx
 	add rax,rbx
 	inc rsi
 	jmp parseParamLoop
@@ -457,6 +486,7 @@ ret
 
 global CRC
 CRC:
+	push R15
 
 	; check len of binaryData
 	mov rax, dataBin
@@ -524,19 +554,34 @@ CRC:
 	mov rax,0
 	call printf
 	
-	
+	POP R15
 ret
 
- 
+ ; https://faculty.nps.edu/cseagle/assembly/sys_call.html
  
 global timeToAX
 timeToAX:
 
-	call clock_gettime
-mov rax,rdi
+mov rax,96
+mov rdi, time_sec
+syscall
+
+
+mov rax,[time_sec]
+
+; rdtsc
+ 
+;mov rax,rdi
 ;	push rdi
 ;	mov rax, 201
 ;	xor rdi, rdi        
 ;	syscall
 ;	pop rdi
+
 ret 
+
+
+
+
+
+ 
