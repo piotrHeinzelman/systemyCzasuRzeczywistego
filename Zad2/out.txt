@@ -1,0 +1,17 @@
+1 cykl
+dane:  506f6c69746563686e696b61
+slowo:  "Politechnika"
+suma kontrolna: 12A3
+zgodna z programem CRC16
+
+czasy:
+     1.000.000 cykli - 0 sek.
+              10.mln - 1 sek.
+             100.mln - 3 sek.
+            1000.mln - 34 sek
+          10.000.mln - 335 sek
+          
+          1 cykl - 0.0000000335 sek
+          1 cykl - 0.0000335   msek
+          1 cykl - 0.0335      usek
+          
