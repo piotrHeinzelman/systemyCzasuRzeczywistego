@@ -12,7 +12,7 @@
     12                                  
     13                                  
     14                                  
-    15 00000000 00C1814001C0804101-     HIGH db 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01...
+    15 00000000 00C1814001C0804101-     myHigh db 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x...
     15 00000009 C0804100C1814001C0-
     15 00000012 804100C1814000C181-
     15 0000001B 4001C0804101C08041-
@@ -41,7 +41,7 @@
     15 000000EA 814001C0804100C181-
     15 000000F3 4001C0804101C08041-
     15 000000FC 00C18140           
-    16 00000100 00C0C101C30302C2C6-     LOW  db 0x00, 0xc0, 0xc1, 0x01, 0xc3, 0x03, 0x02, 0xc2, 0xc6, 0x06, 0x07, 0xc7, 0x05, 0xc5, 0xc4, 0x04, 0xcc, 0x0c, 0x0d, 0xcd, 0x0f, 0xcf, 0xce, 0x0e, 0x0a, 0xca, 0xcb, 0x0b, 0xc9, 0x09, 0x08, 0xc8, 0xd8, 0x18, 0x19, 0xd9, 0x1b, 0xdb, 0xda, 0x1a, 0x1e, 0xde, 0xdf, 0x1f, 0xdd, 0x1d, 0x1c, 0xdc, 0x14, 0xd4, 0xd5, 0x15, 0xd7, 0x17, 0x16, 0xd6, 0xd2, 0x12, 0x13, 0xd3, 0x11, 0xd1, 0xd0, 0x10, 0xf0, 0x30, 0x31, 0xf1, 0x33, 0xf3, 0xf2, 0x32, 0x36, 0xf6, 0xf7, 0x37, 0xf5, 0x35, 0x34, 0xf4, 0x3c, 0xfc, 0xfd, 0x3d, 0xff, 0x3f, 0x3e, 0xfe, 0xfa, 0x3a, 0x3b, 0xfb, 0x39, 0xf9, 0xf8, 0x38, 0x28, 0xe8, 0xe9, 0x29, 0xeb, 0x2b, 0x2a, 0xea, 0xee, 0x2e, 0x2f, 0xef, 0x2d, 0xed, 0xec, 0x2c, 0xe4, 0x24, 0x25, 0xe5, 0x27, 0xe7, 0xe6, 0x26, 0x22, 0xe2, 0xe3, 0x23, 0xe1, 0x21, 0x20, 0xe0, 0xa0, 0x60, 0x61, 0xa1, 0x63, 0xa3, 0xa2, 0x62, 0x66, 0xa6, 0xa7, 0x67, 0xa5, 0x65, 0x64, 0xa4, 0x6c, 0xac, 0xad, 0x6d, 0xaf, 0x6f, 0x6e, 0xae, 0xaa, 0x6a, 0x6b, 0xab, 0x69, 0xa9, 0xa8, 0x68, 0x78, 0xb8, 0xb9, 0x79, 0xbb, 0x7b, 0x7a, 0xba, 0xbe...
+    16 00000100 00C0C101C30302C2C6-     myLow  db 0x00, 0xc0, 0xc1, 0x01, 0xc3, 0x03, 0x02, 0xc2, 0xc6, 0x06, 0x07, 0xc7, 0x05, 0xc5, 0xc4, 0x04, 0xcc, 0x0c, 0x0d, 0xcd, 0x0f, 0xcf, 0xce, 0x0e, 0x0a, 0xca, 0xcb, 0x0b, 0xc9, 0x09, 0x08, 0xc8, 0xd8, 0x18, 0x19, 0xd9, 0x1b, 0xdb, 0xda, 0x1a, 0x1e, 0xde, 0xdf, 0x1f, 0xdd, 0x1d, 0x1c, 0xdc, 0x14, 0xd4, 0xd5, 0x15, 0xd7, 0x17, 0x16, 0xd6, 0xd2, 0x12, 0x13, 0xd3, 0x11, 0xd1, 0xd0, 0x10, 0xf0, 0x30, 0x31, 0xf1, 0x33, 0xf3, 0xf2, 0x32, 0x36, 0xf6, 0xf7, 0x37, 0xf5, 0x35, 0x34, 0xf4, 0x3c, 0xfc, 0xfd, 0x3d, 0xff, 0x3f, 0x3e, 0xfe, 0xfa, 0x3a, 0x3b, 0xfb, 0x39, 0xf9, 0xf8, 0x38, 0x28, 0xe8, 0xe9, 0x29, 0xeb, 0x2b, 0x2a, 0xea, 0xee, 0x2e, 0x2f, 0xef, 0x2d, 0xed, 0xec, 0x2c, 0xe4, 0x24, 0x25, 0xe5, 0x27, 0xe7, 0xe6, 0x26, 0x22, 0xe2, 0xe3, 0x23, 0xe1, 0x21, 0x20, 0xe0, 0xa0, 0x60, 0x61, 0xa1, 0x63, 0xa3, 0xa2, 0x62, 0x66, 0xa6, 0xa7, 0x67, 0xa5, 0x65, 0x64, 0xa4, 0x6c, 0xac, 0xad, 0x6d, 0xaf, 0x6f, 0x6e, 0xae, 0xaa, 0x6a, 0x6b, 0xab, 0x69, 0xa9, 0xa8, 0x68, 0x78, 0xb8, 0xb9, 0x79, 0xbb, 0x7b, 0x7a, 0xba, 0x...
     16 00000109 0607C705C5C404CC0C-
     16 00000112 0DCD0FCFCE0E0ACACB-
     16 0000011B 0BC90908C8D81819D9-
@@ -222,170 +222,171 @@
     25 00000710 000000000000000000-
     25 00000719 000000000000000000-
     25 00000722 000000             
-    26                                  bufferlen equ 0x400
-    27 00000725 000000000000000000-     buf2     db 20 dup 0
-    27 0000072E 000000000000000000-
-    27 00000737 0000               
-    28 00000739 0A0D73746172743A20-     fstart     db   10,13,"start: %d",10,13,0
-    28 00000742 25640A0D00         
-    29 00000747 73746F70203A202564-     fend       db   "stop : %d",10,13,0
-    29 00000750 0A0D00             
-    30 00000753 64656C74613A202564-     fdelta     db   "delta: %d",10,13,0
-    30 0000075C 0A0D00             
-    31 0000075F 63796B6C693A202564-     fcycles    db   "cykli: %d",10,13,0
-    31 00000768 0A0D00             
-    32                                  
-    33 0000076B 0000000000000000        counter	   dq	0
-    34 00000773 2020202000              now		   db "    ",0
+    26 00000725 00                      dataLen	 db 0
+    27                                  
+    28                                  bufferlen equ 0x400
+    29 00000726 000000000000000000-     buf2     db 20 dup 0
+    29 0000072F 000000000000000000-
+    29 00000738 0000               
+    30 0000073A 0A0D73746172743A20-     fstart     db   10,13,"start: %d",10,13,0
+    30 00000743 25640A0D00         
+    31 00000748 73746F70203A202564-     fend       db   "stop : %d",10,13,0
+    31 00000751 0A0D00             
+    32 00000754 64656C74613A202564-     fdelta     db   "delta: %d",10,13,0
+    32 0000075D 0A0D00             
+    33 00000760 63796B6C693A202564-     fcycles    db   "cykli: %d",10,13,0
+    33 00000769 0A0D00             
+    34 0000076C 726573756C743A2030-     fresult    db   "result: 0x%X",10,13,0
+    34 00000775 7825580A0D00       
     35                                  
-    36                                  
-    37                                  
-    38 00000778 0A0D4F4B210A0D00        success_Read db 10,13,"OK!",10,13,0
+    36 0000077B FF                      crcHigh	   db   0xff;
+    37 0000077C FF                      crcLow	   db   0xff;
+    38                                  
     39                                  
-    40 00000780 0A0D77637A7974756A-     msg db 10,13 , "wczytuje plik: data.txt", 10,13,0
-    40 00000789 6520706C696B3A2064-
-    40 00000792 6174612E7478740A0D-
-    40 0000079B 00                 
-    41                                  
+    40 0000077D 0000000000000000        counter	   dq 0
+    41 00000785 2020202000              now		   db "    ",0
     42                                  
     43                                  
-    44                                  section .text
-    45                                  global main
-    46                                  main:
-    47                                  
-    48                                  	; args
-    49                                  	;mov ecx, [esp+4] ; argc
-    50                                  	;mov edx, [esp+8] ; argv
-    51                                  
-    52 00000000 4A8B740608              	mov rsi, qword [rsi+r8+8] ; argv
-    53                                  	
-    54 00000005 B800000000              	mov rax, 0
-    55 0000000A E8FA020000              	call parseParam ; rsi to rax
-    56 0000000F 4989C7                  	mov r15,rax
-    57                                  	
-    58 00000012 48BE-                   	mov rsi, buf2
-    58 00000014 [2507000000000000] 
-    59 0000001C 488906                  	mov [rsi], rax
+    44                                  
+    45 0000078A 0A0D4F4B210A0D00        success_Read db 10,13,"OK!",10,13,0
+    46                                  
+    47 00000792 0A0D77637A7974756A-     msg db 10,13 , "wczytuje plik: data.txt", 10,13,0
+    47 0000079B 6520706C696B3A2064-
+    47 000007A4 6174612E7478740A0D-
+    47 000007AD 00                 
+    48                                  
+    49                                  
+    50                                  
+    51                                  section .text
+    52                                  global main
+    53                                  main:
+    54                                  
+    55                                  	; args
+    56                                  	;mov ecx, [esp+4] ; argc
+    57                                  	;mov edx, [esp+8] ; argv
+    58                                  
+    59 00000000 4A8B740608              	mov rsi, qword [rsi+r8+8] ; argv
     60                                  	
-    61 0000001F E807010000              	call printString
-    62                                  
-    63                                  
-    64                                  
-    65                                  
-    66                                  
-    67                                  
-    68                                  
+    61 00000005 B800000000              	mov rax, 0
+    62 0000000A E8ED020000              	call parseParam ; rsi to rax
+    63 0000000F 4989C7                  	mov r15,rax
+    64                                  	
+    65 00000012 48BE-                   	mov rsi, buf2
+    65 00000014 [2607000000000000] 
+    66 0000001C 488906                  	mov [rsi], rax
+    67                                  	
+    68 0000001F E8FA000000              	call printString
     69                                  
-    70 00000024 48BE-                   	mov rsi, msg
-    70 00000026 [8007000000000000] 
-    71 0000002E E8F8000000              	call printString
-    72                                  	
-    73                                  	; open file
-    74 00000033 48BF-                   	mov rdi,fileName
-    74 00000035 [0002000000000000] 
-    75 0000003D E822010000              	call openFile
-    76                                  	
-    77                                  	; save descriptor
-    78 00000042 48890425[09020000]      	mov qword [FD], rax
+    70                                  
+    71                                  
+    72                                  
+    73                                  
+    74                                  
+    75                                  
+    76                                  
+    77 00000024 48BE-                   	mov rsi, msg
+    77 00000026 [9207000000000000] 
+    78 0000002E E8EB000000              	call printString
     79                                  	
-    80                                  	; read file
-    81 0000004A 488B3C25[09020000]      	mov rdi, qword [FD]
-    82 00000052 48BE-                   	mov rsi, bufIn
-    82 00000054 [1102000000000000] 
-    83 0000005C BA00040000              	mov rdx, bufferlen
-    84 00000061 E8F6000000              	call readFile
-    85                                  
-    86                                  	; close file
-    87 00000066 488B3C25[09020000]      	mov rdi, qword [FD]	
-    88 0000006E E8FE000000              	call closeFile
-    89                                  	
-    90                                  	; parse to binary
-    91 00000073 E801010000              	call parseFile
+    80                                  	; open file
+    81 00000033 48BF-                   	mov rdi,fileName
+    81 00000035 [0002000000000000] 
+    82 0000003D E815010000              	call openFile
+    83                                  	
+    84                                  	; save descriptor
+    85 00000042 48890425[09020000]      	mov qword [FD], rax
+    86                                  	
+    87                                  	; read file
+    88 0000004A 488B3C25[09020000]      	mov rdi, qword [FD]
+    89 00000052 48BE-                   	mov rsi, bufIn
+    89 00000054 [1102000000000000] 
+    90 0000005C BA00040000              	mov rdx, bufferlen
+    91 00000061 E8E9000000              	call readFile
     92                                  
-    93                                  	; print dataIn
-    94 00000078 48BE-                   	mov rsi, bufIn
-    94 0000007A [1102000000000000] 
-    95 00000082 E8A4000000              	call printString
-    96                                  
-    97                                  	; print
-    98 00000087 48BE-                   	mov rsi, space
-    98 00000089 [1206000000000000] 
-    99 00000091 E895000000              	call printString
-   100                                  
-   101                                  
-   102                                  
+    93                                  	; close fileHigh
+    94 00000066 488B3C25[09020000]      	mov rdi, qword [FD]	
+    95 0000006E E8F1000000              	call closeFile
+    96                                  	
+    97                                  	; parse to binary
+    98 00000073 E8F4000000              	call parseFile
+    99                                  
+   100                                  	; print dataIn
+   101 00000078 48BE-                   	mov rsi, bufIn
+   101 0000007A [1102000000000000] 
+   102 00000082 E897000000              	call printString
    103                                  
-   104 00000096 B800000000              	mov rax,0
-   105 0000009B 48BF-                   	mov rdi, fcycles
-   105 0000009D [5F07000000000000] 
-   106 000000A5 4C89FE                  	mov rsi,r15
-   107 000000A8 E8(00000000)            	call printf
+   104                                  	; print
+   105 00000087 48BE-                   	mov rsi, space
+   105 00000089 [1206000000000000] 
+   106 00000091 E888000000              	call printString
+   107                                  
    108                                  
-   109                                  
-   110                                  	; start time
-   111                                  	
-   112                                  
-   113 000000AD E893020000                  call timeToAX
-   114 000000B2 4989C5                      mov r13, rax
-   115                                  
-   116 000000B5 B800000000              	mov rax,0
-   117 000000BA 48BF-                   	mov rdi, fstart
-   117 000000BC [3907000000000000] 
-   118 000000C4 4C89EE                  	mov rsi,r13
-   119 000000C7 E8(00000000)            	call printf
+   109 00000096 B800000000              	mov rax,0
+   110 0000009B 48BF-                   	mov rdi, fcycles
+   110 0000009D [6007000000000000] 
+   111 000000A5 4C89FE                  	mov rsi,r15
+   112 000000A8 E8(00000000)            	call printf
+   113                                  
+   114                                  
+   115                                  	; start time
+   116                                  	
+   117                                  
+   118 000000AD E8F8020000                  call timeToAX
+   119 000000B2 4989C5                      mov r13, rax
    120                                  
    121                                  
-   122 000000CC 4C89FB                  	mov rbx,r15
-   123 000000CF 48FFC3                  	inc rbx
-   124                                  	myLoop:
-   125                                  
-   126 000000D2 48FFCB                  	dec rbx
-   127 000000D5 7407                    	jz myLoopEnd	
-   128                                  	
-   129 000000D7 E85E020000              		call CRC  
-   130                                  	 
-   131 000000DC EBF4                    	jmp myLoop
-   132                                  	myLoopEnd:
-   133                                  	
+   122 000000B5 B800000000              	mov rax,0
+   123 000000BA 48BF-                   	mov rdi, fstart
+   123 000000BC [3A07000000000000] 
+   124 000000C4 4C89EE                  	mov rsi,r13
+   125 000000C7 E8(00000000)            	call printf
+   126                                  
+   127                                  
+   128                                  
+   129 000000CC E85C020000              		call CRC  
+   130                                  
+   131                                  	; end time
+   132 000000D1 E8D4020000              	call timeToAX
+   133 000000D6 4989C6                      mov r14, rax
    134                                  
-   135                                  	; end time
-   136 000000DE E862020000              	call timeToAX
-   137 000000E3 4989C6                      mov r14, rax
-   138                                  
-   139 000000E6 B800000000              	mov rax,0
-   140 000000EB 48BF-                   	mov rdi, fstart
-   140 000000ED [3907000000000000] 
-   141 000000F5 4C89F6                  	mov rsi,r14
-   142 000000F8 E8(00000000)            	call printf
-   143                                  	
-   144                                  	; delta
-   145 000000FD 4D29EE                  	sub r14,r13
-   146 00000100 B800000000              	mov rax,0
-   147 00000105 48BF-                   	mov rdi, fdelta
-   147 00000107 [5307000000000000] 
-   148 0000010F 4C89F6                  	mov rsi,r14
-   149 00000112 E8(00000000)            	call printf
-   150                                  	
-   151                                  	
-   152 00000117 E833000000              	call exit
-   153 0000011C C3                      ret
+   135 000000D9 B800000000              	mov rax,0
+   136 000000DE 48BF-                   	mov rdi, fstart
+   136 000000E0 [3A07000000000000] 
+   137 000000E8 4C89F6                  	mov rsi,r14
+   138 000000EB E8(00000000)            	call printf
+   139                                  	
+   140                                  	; delta
+   141 000000F0 4D29EE                  	sub r14,r13
+   142 000000F3 B800000000              	mov rax,0
+   143 000000F8 48BF-                   	mov rdi, fdelta
+   143 000000FA [5407000000000000] 
+   144 00000102 4C89F6                  	mov rsi,r14
+   145 00000105 E8(00000000)            	call printf
+   146                                  	
+   147                                  	
+   148 0000010A E833000000              	call exit
+   149 0000010F C3                      ret
+   150                                  
+   151                                  
+   152                                  
+   153                                  
    154                                  
    155                                  
    156                                  
    157                                  
    158                                  
    159                                  
-   160                                  
-   161                                  
-   162                                  
+   160                                  ; close file
+   161 00000110 488B3C25[09020000]      mov rdi, qword[FD]
+   162 00000118 E847000000              call closeFile
    163                                  
-   164                                  ; close file
-   165 0000011D 488B3C25[09020000]      mov rdi, qword[FD]
-   166 00000125 E847000000              call closeFile
+   164 0000011D C3                      ret
+   165                                  
+   166                                  ;
    167                                  
-   168 0000012A C3                      ret
+   168                                  
    169                                  
-   170                                  ;
+   170                                  
    171                                  
    172                                  
    173                                  
@@ -399,315 +400,367 @@
    181                                  
    182                                  
    183                                  
-   184                                  
-   185                                  
-   186                                  
-   187                                  
-   188                                  global printString ; rsi <= stringAddress
-   189                                  printString:
-   190                                      ; rsi msg addres
-   191 0000012B 4989F4                  	mov r12,rsi
-   192 0000012E BA00000000              	mov rdx,0
-   193                                  
-   194                                  	strLoop:
-   195 00000133 41803C2400              	   cmp byte[r12],0
-   196 00000138 7408                    	   je loopEnd;
-   197 0000013A 48FFC2                  	   inc rdx
-   198 0000013D 49FFC4                  	   inc r12
-   199 00000140 EBF1                    	   jmp strLoop	
-   200                                  	   
-   201                                  	loopEnd:
-   202 00000142 B801000000              	mov rax,1 ; print
-   203 00000147 BF01000000              	mov rdi,1 ; to std_out
-   204 0000014C 0F05                    	syscall
+   184                                  global printString ; rsi <= stringAddress
+   185                                  printString:
+   186                                      ; rsi msg addres
+   187 0000011E 4989F4                  	mov r12,rsi
+   188 00000121 BA00000000              	mov rdx,0
+   189                                  
+   190                                  	strLoop:
+   191 00000126 41803C2400              	   cmp byte[r12],0
+   192 0000012B 7408                    	   je loopEnd;
+   193 0000012D 48FFC2                  	   inc rdx
+   194 00000130 49FFC4                  	   inc r12
+   195 00000133 EBF1                    	   jmp strLoop	
+   196                                  	   
+   197                                  	loopEnd:
+   198 00000135 B801000000              	mov rax,1 ; print
+   199 0000013A BF01000000              	mov rdi,1 ; to std_out
+   200 0000013F 0F05                    	syscall
+   201                                  
+   202 00000141 C3                      ret
+   203                                  
+   204                                  
    205                                  
-   206 0000014E C3                      ret
+   206                                  
    207                                  
-   208                                  
-   209                                  
-   210                                  
-   211                                  
-   212                                  global exit
-   213                                  exit:
-   214 0000014F B83C000000              	mov rax,60
-   215 00000154 BF00000000              	mov rdi,0
-   216 00000159 0F05                    	syscall
-   217                                  
-   218 0000015B C3                      ret
-   219                                  	
-   220                                  	
-   221                                  ; ---- funkcje manipulujace plikiem
-   222                                  ; ---------------------------------
-   223                                  
-   224                                  
-   225                                  global readFile
-   226                                  readFile:
-   227                                      
-   228 0000015C B800000000              	mov rax, NR_read
-   229 00000161 0F05                    	syscall
-   230                                  	
-   231                                  	;mov byte[rsi+rax],0 ; dodajemy 0 na koncu lancucha
-   232                                  	;mov rax,rsi
-   233                                  	;push rsi
-   234                                  	;push rax
-   235                                  	;	mov  rsi,success_Read
-   236                                  	;	call printString
-   237                                  	;pop rax
-   238                                  	;pop rsi
-   239 00000163 C3                      ret
-   240                                  
-   241                                  ; ---
-   242                                  
+   208                                  global exit
+   209                                  exit:
+   210 00000142 B83C000000              	mov rax,60
+   211 00000147 BF00000000              	mov rdi,0
+   212 0000014C 0F05                    	syscall
+   213                                  
+   214 0000014E C3                      ret
+   215                                  	
+   216                                  	
+   217                                  ; ---- funkcje manipulujace plikiem
+   218                                  ; ---------------------------------
+   219                                  
+   220                                  
+   221                                  global readFile
+   222                                  readFile:
+   223 0000014F B800000000              	mov rax, NR_read
+   224 00000154 0F05                    	syscall
+   225 00000156 C3                      ret
+   226                                  
+   227                                  ; ---
+   228                                  
+   229                                  
+   230                                  global openFile
+   231                                  openFile:
+   232 00000157 B802000000              	mov rax, NR_open
+   233 0000015C BE00000000              	mov rsi, O_RDONLY
+   234 00000161 0F05                    	syscall
+   235 00000163 C3                      ret
+   236                                  
+   237                                  
+   238                                  global closeFile
+   239                                  closeFile:
+   240 00000164 B803000000              	mov rax,NR_close
+   241 00000169 0F05                    	syscall
+   242 0000016B C3                      ret
    243                                  
-   244                                  global openFile
-   245                                  openFile:
-   246                                  
-   247 00000164 B802000000              	mov rax, NR_open
-   248 00000169 BE00000000              	mov rsi, O_RDONLY
-   249 0000016E 0F05                    	syscall
-   250 00000170 C3                      ret
-   251                                  
-   252                                  
-   253                                  global closeFile
-   254                                  closeFile:
-   255 00000171 B803000000              mov rax,NR_close
-   256 00000176 0F05                    syscall
-   257 00000178 C3                      ret
-   258                                  
-   259                                  
-   260                                  global parseFile ; 	mov rsi, bufIn
-   261                                  parseFile:
-   262                                  	
-   263 00000179 48BE-                   	mov rsi, bufIn 
-   263 0000017B [1102000000000000] 
-   264 00000183 48BF-                   	mov rdi, dataBin
-   264 00000185 [1406000000000000] 
+   244                                  
+   245                                  global parseFile ; 	mov rsi, bufIn
+   246                                  parseFile:
+   247                                  	
+   248 0000016C 48BE-                   	mov rsi, bufIn 
+   248 0000016E [1102000000000000] 
+   249 00000176 48BF-                   	mov rdi, dataBin
+   249 00000178 [1406000000000000] 
+   250                                  	
+   251                                  	parseChar:
+   252 00000180 66B80000                		mov ax,0
+   253 00000184 803E00                  		cmp byte [rsi],0
+   254 00000187 741A                    		je parseEnd
+   255                                  		
+   256 00000189 E816000000              		call charToInt
+   257 0000018E 48FFC6                  		inc rsi
+   258                                  		
+   259 00000191 E80E000000              		call charToInt
+   260 00000196 48FFC6                  		inc rsi
+   261 00000199 8807                    		mov byte[rdi],al
+   262 0000019B 48FFC7                  		inc rdi
+   263 0000019E 48FFC6                  		inc rsi
+   264 000001A1 EBDD                    		jmp parseChar
    265                                  	
-   266                                  	parseChar:
-   267 0000018D 66B80000                		mov ax,0
-   268 00000191 803E00                  		cmp byte [rsi],0
-   269 00000194 741A                    		je parseEnd
-   270                                  		
-   271 00000196 E816000000              		call charToInt
-   272 0000019B 48FFC6                  		inc rsi
-   273                                  		
-   274 0000019E E80E000000              		call charToInt
-   275 000001A3 48FFC6                  		inc rsi
-   276 000001A6 8807                    		mov byte[rdi],al
-   277 000001A8 48FFC7                  		inc rdi
-   278 000001AB 48FFC6                  		inc rsi
-   279 000001AE EBDD                    		jmp parseChar
-   280                                  	
-   281                                  	parseEnd:
+   266                                  	parseEnd:
+   267                                  	
+   268                                  	
+   269                                  
+   270                                  
+   271                                  parseFileLoop:
+   272                                  
+   273                                  
+   274 000001A3 C3                      ret 
+   275                                  
+   276                                  
+   277                                  
+   278                                  global charToInt ; char [rsi]
+   279                                  charToInt:
+   280 000001A4 803E30                  	cmp byte[rsi],0x30
+   281 000001A7 0F84BE000000            	je loop0
    282                                  	
-   283                                  	
-   284                                  
+   283 000001AD 803E31                  	cmp byte[rsi],0x31
+   284 000001B0 0F84BE000000            	je loop1
    285                                  
-   286                                  parseFileLoop:
-   287                                  
+   286 000001B6 803E32                  	cmp byte[rsi],0x32
+   287 000001B9 0F84BE000000            	je loop2
    288                                  
-   289 000001B0 C3                      ret 
-   290                                  
+   289 000001BF 803E33                  	cmp byte[rsi],0x33
+   290 000001C2 0F84BE000000            	je loop3
    291                                  
-   292                                  
-   293                                  global charToInt ; char [rsi]
-   294                                  charToInt:
-   295 000001B1 803E30                  	cmp byte[rsi],0x30
-   296 000001B4 0F84BE000000            	je loop0
-   297                                  	
-   298 000001BA 803E31                  	cmp byte[rsi],0x31
-   299 000001BD 0F84BE000000            	je loop1
+   292 000001C8 803E34                  	cmp byte[rsi],0x34
+   293 000001CB 0F84BE000000            	je loop4
+   294                                  	
+   295 000001D1 803E35                  	cmp byte[rsi],0x35
+   296 000001D4 0F84BE000000            	je loop5
+   297                                  
+   298 000001DA 803E36                  	cmp byte[rsi],0x36
+   299 000001DD 0F84BE000000            	je loop6
    300                                  
-   301 000001C3 803E32                  	cmp byte[rsi],0x32
-   302 000001C6 0F84BE000000            	je loop2
-   303                                  
-   304 000001CC 803E33                  	cmp byte[rsi],0x33
-   305 000001CF 0F84BE000000            	je loop3
-   306                                  
-   307 000001D5 803E34                  	cmp byte[rsi],0x34
-   308 000001D8 0F84BE000000            	je loop4
-   309                                  	
-   310 000001DE 803E35                  	cmp byte[rsi],0x35
-   311 000001E1 0F84BE000000            	je loop5
+   301 000001E3 803E37                  	cmp byte[rsi],0x37
+   302 000001E6 0F84BE000000            	je loop7
+   303                                  	
+   304 000001EC 803E38                  	cmp byte[rsi],0x38
+   305 000001EF 0F84BE000000            	je loop8
+   306                                  	
+   307 000001F5 803E39                  	cmp byte[rsi],0x39
+   308 000001F8 0F84BE000000            	je loop9
+   309                                  
+   310 000001FE 803E41                  	cmp byte[rsi],0x41
+   311 00000201 0F84BE000000            	je loopa
    312                                  
-   313 000001E7 803E36                  	cmp byte[rsi],0x36
-   314 000001EA 0F84BE000000            	je loop6
-   315                                  
-   316 000001F0 803E37                  	cmp byte[rsi],0x37
-   317 000001F3 0F84BE000000            	je loop7
+   313 00000207 803E61                  	cmp byte[rsi],0x61
+   314 0000020A 0F84B5000000            	je loopa
+   315                                  	
+   316 00000210 803E42                  	cmp byte[rsi],0x42
+   317 00000213 0F84B5000000            	je loopb
    318                                  	
-   319 000001F9 803E38                  	cmp byte[rsi],0x38
-   320 000001FC 0F84BE000000            	je loop8
-   321                                  	
-   322 00000202 803E39                  	cmp byte[rsi],0x39
-   323 00000205 0F84BE000000            	je loop9
+   319 00000219 803E62                  	cmp byte[rsi],0x62
+   320 0000021C 0F84AC000000            	je loopb
+   321                                  
+   322 00000222 803E43                  	cmp byte[rsi],0x43
+   323 00000225 0F84AC000000            	je loopc
    324                                  
-   325 0000020B 803E41                  	cmp byte[rsi],0x41
-   326 0000020E 0F84BE000000            	je loopa
-   327                                  
-   328 00000214 803E61                  	cmp byte[rsi],0x61
-   329 00000217 0F84B5000000            	je loopa
+   325 0000022B 803E63                  	cmp byte[rsi],0x63
+   326 0000022E 0F84A3000000            	je loopc
+   327                                  	
+   328 00000234 803E44                  	cmp byte[rsi],0x44
+   329 00000237 0F84A3000000            	je loop_d
    330                                  	
-   331 0000021D 803E42                  	cmp byte[rsi],0x42
-   332 00000220 0F84B5000000            	je loopb
-   333                                  	
-   334 00000226 803E62                  	cmp byte[rsi],0x62
-   335 00000229 0F84AC000000            	je loopb
+   331 0000023D 803E64                  	cmp byte[rsi],0x64
+   332 00000240 0F849A000000            	je loop_d
+   333                                  
+   334 00000246 803E45                  	cmp byte[rsi],0x45
+   335 00000249 0F849A000000            	je loop_e
    336                                  
-   337 0000022F 803E43                  	cmp byte[rsi],0x43
-   338 00000232 0F84AC000000            	je loopc
-   339                                  
-   340 00000238 803E63                  	cmp byte[rsi],0x63
-   341 0000023B 0F84A3000000            	je loopc
+   337 0000024F 803E65                  	cmp byte[rsi],0x65
+   338 00000252 0F8491000000            	je loop_e
+   339                                  	
+   340 00000258 803E46                  	cmp byte[rsi],0x46
+   341 0000025B 0F8491000000            	je loopf
    342                                  	
-   343 00000241 803E44                  	cmp byte[rsi],0x44
-   344 00000244 0F84A3000000            	je loop_d
-   345                                  	
-   346 0000024A 803E64                  	cmp byte[rsi],0x64
-   347 0000024D 0F849A000000            	je loop_d
-   348                                  
-   349 00000253 803E45                  	cmp byte[rsi],0x45
-   350 00000256 0F849A000000            	je loop_e
-   351                                  
-   352 0000025C 803E65                  	cmp byte[rsi],0x65
-   353 0000025F 0F8491000000            	je loop_e
-   354                                  	
-   355 00000265 803E46                  	cmp byte[rsi],0x46
-   356 00000268 0F8491000000            	je loopf
+   343 00000261 803E66                  	cmp byte[rsi],0x66
+   344 00000264 0F8488000000            	je loopf
+   345                                  
+   346 0000026A C3                      	ret
+   347                                  	
+   348                                  	loop0:
+   349 0000026B 66C1E004                	shl ax,4
+   350 0000026F 6683C000                	add ax,0
+   351 00000273 C3                      	ret
+   352                                  
+   353                                  	loop1:
+   354 00000274 66C1E004                	shl ax,4	
+   355 00000278 6683C001                	add ax,1
+   356 0000027C C3                      	ret
    357                                  	
-   358 0000026E 803E66                  	cmp byte[rsi],0x66
-   359 00000271 0F8488000000            	je loopf
-   360                                  
-   361 00000277 C3                      	ret
+   358                                  	loop2:
+   359 0000027D 66C1E004                	shl ax,4	
+   360 00000281 6683C002                	add ax,2
+   361 00000285 C3                      	ret
    362                                  	
-   363                                  	loop0:
-   364 00000278 66C1E004                	shl ax,4
-   365 0000027C 6683C000                	add ax,0
-   366 00000280 C3                      	ret
+   363                                  	loop3:
+   364 00000286 66C1E004                	shl ax,4	
+   365 0000028A 6683C003                	add ax,3
+   366 0000028E C3                      	ret
    367                                  
-   368                                  	loop1:
-   369 00000281 66C1E004                	shl ax,4	
-   370 00000285 6683C001                	add ax,1
-   371 00000289 C3                      	ret
+   368                                  	loop4:
+   369 0000028F 66C1E004                	shl ax,4	
+   370 00000293 6683C004                	add ax,4
+   371 00000297 C3                      	ret
    372                                  	
-   373                                  	loop2:
-   374 0000028A 66C1E004                	shl ax,4	
-   375 0000028E 6683C002                	add ax,2
-   376 00000292 C3                      	ret
+   373                                  	loop5:
+   374 00000298 66C1E004                	shl ax,4	
+   375 0000029C 6683C005                	add ax,5
+   376 000002A0 C3                      	ret
    377                                  	
-   378                                  	loop3:
-   379 00000293 66C1E004                	shl ax,4	
-   380 00000297 6683C003                	add ax,3
-   381 0000029B C3                      	ret
-   382                                  
-   383                                  	loop4:
-   384 0000029C 66C1E004                	shl ax,4	
-   385 000002A0 6683C004                	add ax,4
-   386 000002A4 C3                      	ret
+   378                                  	loop6:
+   379 000002A1 66C1E004                	shl ax,4	
+   380 000002A5 6683C006                	add ax,6
+   381 000002A9 C3                      	ret
+   382                                  	
+   383                                  	loop7:
+   384 000002AA 66C1E004                	shl ax,4	
+   385 000002AE 6683C007                	add ax,7
+   386 000002B2 C3                      	ret
    387                                  	
-   388                                  	loop5:
-   389 000002A5 66C1E004                	shl ax,4	
-   390 000002A9 6683C005                	add ax,5
-   391 000002AD C3                      	ret
+   388                                  	loop8:
+   389 000002B3 66C1E004                	shl ax,4	
+   390 000002B7 6683C008                	add ax,8
+   391 000002BB C3                      	ret
    392                                  	
-   393                                  	loop6:
-   394 000002AE 66C1E004                	shl ax,4	
-   395 000002B2 6683C006                	add ax,6
-   396 000002B6 C3                      	ret
+   393                                  	loop9:
+   394 000002BC 66C1E004                	shl ax,4	
+   395 000002C0 6683C009                	add ax,9
+   396 000002C4 C3                      	ret
    397                                  	
-   398                                  	loop7:
-   399 000002B7 66C1E004                	shl ax,4	
-   400 000002BB 6683C007                	add ax,7
-   401 000002BF C3                      	ret
+   398                                  	loopa:
+   399 000002C5 66C1E004                	shl ax,4	
+   400 000002C9 6683C00A                	add ax,0x0a
+   401 000002CD C3                      	ret
    402                                  	
-   403                                  	loop8:
-   404 000002C0 66C1E004                	shl ax,4	
-   405 000002C4 6683C008                	add ax,8
-   406 000002C8 C3                      	ret
+   403                                  	loopb:
+   404 000002CE 66C1E004                	shl ax,4	
+   405 000002D2 6683C00B                	add ax,0x0b
+   406 000002D6 C3                      	ret
    407                                  	
-   408                                  	loop9:
-   409 000002C9 66C1E004                	shl ax,4	
-   410 000002CD 6683C009                	add ax,9
-   411 000002D1 C3                      	ret
+   408                                  	loopc:
+   409 000002D7 66C1E004                	shl ax,4	
+   410 000002DB 6683C00C                	add ax,0x0c
+   411 000002DF C3                      	ret
    412                                  	
-   413                                  	loopa:
-   414 000002D2 66C1E004                	shl ax,4	
-   415 000002D6 6683C00A                	add ax,0x0a
-   416 000002DA C3                      	ret
+   413                                  	loop_d:
+   414 000002E0 66C1E004                	shl ax,4	
+   415 000002E4 6683C00D                	add ax,0x0d	
+   416 000002E8 C3                      	ret
    417                                  	
-   418                                  	loopb:
-   419 000002DB 66C1E004                	shl ax,4	
-   420 000002DF 6683C00B                	add ax,0x0b
-   421 000002E3 C3                      	ret
+   418                                  	loop_e:
+   419 000002E9 66C1E004                	shl ax,4	
+   420 000002ED 6683C00E                	add ax,0x0e
+   421 000002F1 C3                      	ret
    422                                  	
-   423                                  	loopc:
-   424 000002E4 66C1E004                	shl ax,4	
-   425 000002E8 6683C00C                	add ax,0x0c
-   426 000002EC C3                      	ret
-   427                                  	
-   428                                  	loop_d:
-   429 000002ED 66C1E004                	shl ax,4	
-   430 000002F1 6683C00D                	add ax,0x0d
-   431 000002F5 C3                      	ret
-   432                                  	
-   433                                  	loop_e:
-   434 000002F6 66C1E004                	shl ax,4	
-   435 000002FA 6683C00E                	add ax,0x0e
-   436 000002FE C3                      	ret
-   437                                  	
-   438                                  	loopf:
-   439 000002FF 66C1E004                	shl ax,4	
-   440 00000303 6683C00F                	add ax,0x0f
-   441 00000307 C3                      	ret
-   442                                  
-   443 00000308 C3                      ret
-   444                                  
-   445                                  
-   446                                  global parseParam ; rsi
-   447                                  parseParam:
-   448                                  
-   449 00000309 B800000000              	mov rax, 0
-   450 0000030E 66B90A00                	mov cx,0x0a
-   451                                  	
-   452                                  	parseParamLoop:
-   453 00000312 803E00                  		cmp byte[rsi],0
-   454 00000315 741A                    		je 	parseParamEnd
-   455 00000317 803E14                  		cmp byte[rsi],20
-   456 0000031A 7415                    		je 	parseParamEnd
-   457                                  	
-   458 0000031C BB00000000              	mov rbx,0
-   459 00000321 8A1E                    	mov bl, byte[rsi]
-   460 00000323 80EB30                  	sub bl, 0x030
-   461 00000326 66F7E1                  	mul cx
-   462 00000329 4801D8                  	add rax,rbx
-   463 0000032C 48FFC6                  	inc rsi
-   464 0000032F EBE1                    	jmp parseParamLoop
-   465                                  	
-   466                                  	parseParamEnd:
-   467                                  
-   468 00000331 48890425[6B070000]      	mov [counter],rax
-   469                                  
-   470 00000339 C3                      ret
-   471                                  
-   472                                  
-   473                                  global CRC
-   474                                  CRC:
-   475 0000033A B8FFFFFFFF              		mov rax , 0xffffffff
-   476                                  		CRCLoop:
-   477 0000033F 48FFC8                  		dec rax
-   478 00000342 75FB                    		jnz CRCLoop
-   479 00000344 C3                      ret
-   480                                  
-   481                                   
-   482                                   
-   483                                  global timeToAX
-   484                                  timeToAX:
-   485                                  
-   486 00000345 E8(00000000)            	call clock_gettime
-   487 0000034A 4889F8                  mov rax,rdi
-   488                                  ;	push rdi
-   489                                  ;	mov rax, 201
-   490                                  ;	xor rdi, rdi        
-   491                                  ;	syscall
-   492                                  ;	pop rdi
-   493 0000034D C3                      ret 
+   423                                  	loopf:
+   424 000002F2 66C1E004                	shl ax,4	
+   425 000002F6 6683C00F                	add ax,0x0f
+   426 000002FA C3                      	ret
+   427                                  
+   428 000002FB C3                      ret
+   429                                  
+   430                                  
+   431                                  global parseParam ; rsi
+   432                                  parseParam:
+   433                                  
+   434 000002FC B800000000              	mov rax, 0
+   435 00000301 66B90A00                	mov cx,0x0a
+   436                                  	
+   437                                  	parseParamLoop:
+   438 00000305 803E00                  		cmp byte[rsi],0
+   439 00000308 741A                    		je 	parseParamEnd
+   440 0000030A 803E14                  		cmp byte[rsi],20
+   441 0000030D 7415                    		je 	parseParamEnd
+   442                                  	
+   443 0000030F BB00000000              	mov rbx,0
+   444 00000314 8A1E                    	mov bl, byte[rsi]
+   445 00000316 80EB30                  	sub bl, 0x030
+   446 00000319 66F7E1                  	mul cx
+   447 0000031C 4801D8                  	add rax,rbx
+   448 0000031F 48FFC6                  	inc rsi
+   449 00000322 EBE1                    	jmp parseParamLoop
+   450                                  	
+   451                                  	parseParamEnd:
+   452                                  
+   453 00000324 48890425[7D070000]      	mov [counter],rax
+   454                                  
+   455 0000032C C3                      ret
+   456                                  
+   457                                  
+   458                                  global CRC
+   459                                  CRC:
+   460                                  
+   461                                  	; check len of binaryData
+   462 0000032D 48B8-                   	mov rax, dataBin
+   462 0000032F [1406000000000000] 
+   463 00000337 B500                    	mov ch,0 
+   464 00000339 48FFC8                  	dec rax
+   465 0000033C FECD                    	dec ch
+   466                                  	 lenLoop:
+   467 0000033E 48FFC0                  	 inc rax
+   468 00000341 FEC5                    	 inc ch
+   469 00000343 803800                  	 cmp byte [rax],0
+   470 00000346 75F6                    	 jne lenLoop	
+   471 00000348 882C25[25070000]        	mov byte[ dataLen ], ch
+   472 0000034F B800000000              	mov rax,0
+   473                                  
+   474                                   
+   475                                      ; ch <- length	
+   476                                  	; ax  <- HiByte = 0xff
+   477                                  	; al  <- LoByte = 0xff
+   478                                  	; message[i] <- [dataBin+rdx]
+   479                                  	 
+   480                                  	
+   481                                  
+   482                                  
+   483                                  	; R15 - loop len
+   484                                  	; 10^6 loop
+   485                                  	
+   486                                  	CRCLoops:
+   487 00000354 B4FF                    	mov ah, 0xff
+   488 00000356 B0FF                    	mov al, 0xff
+   489 00000358 48BB-                   	mov rbx , dataBin ; Message
+   489 0000035A [1406000000000000] 
+   490 00000362 8A2C25[25070000]        	mov ch, [ dataLen ]
+   491 00000369 FEC5                    	inc ch
+   492 0000036B BA00000000              	mov rdx,0
+   493                                  
+   494                                  		; CRC !!!
+   495                                  		oneCRC:
+   496                                  	
+   497 00000370 448A0B                  		mov R9B, byte [rbx]   ; dh = *pMessage
+   498 00000373 48FFC3                  			 inc rbx    ; Message++
+   499 00000376 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+   500 00000378 4430CA                  		xor dl, R9B		; index = dl			     	;		Index  = HiByte ^ *pMessage++; 
+   501                                  		
+   502                                  		
+   503 0000037B 8AA2[00000000]          		mov ah,byte [ myHigh + rdx]
+   504 00000381 30C4                    		xor ah,al		;		HiByte = LoByte ^ aCRCHi[Index];
+   505                                  		
+   506 00000383 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   507                                  						;		LoByte = aCRCLo[Index]; 
+   508                                  
+   509 00000389 FECD                    		dec ch
+   510 0000038B 75E3                    		jnz oneCRC
+   511                                  		; CRC !!
+   512                                  		; HiByte = AH
+   513                                  		; LoByte = AL
+   514                                  		; Result = AX
+   515                                  		;		return (HiByte << 8 | LoByte); 
+   516                                  		
+   517                                  	; / 10^6 loop	
+   518 0000038D 49FFCF                  	dec r15
+   519 00000390 75C2                    	jnz CRCLoops
+   520                                  	
+   521                                  	; print result
+   522 00000392 48BF-                   	mov rdi, fresult
+   522 00000394 [6C07000000000000] 
+   523 0000039C 4889C6                  	mov rsi,rax
+   524 0000039F B800000000              	mov rax,0
+   525 000003A4 E8(00000000)            	call printf
+   526                                  	
+   527                                  	
+   528 000003A9 C3                      ret
+   529                                  
+   530                                   
+   531                                   
+   532                                  global timeToAX
+   533                                  timeToAX:
+   534                                  
+   535 000003AA E8(00000000)            	call clock_gettime
+   536 000003AF 4889F8                  mov rax,rdi
+   537                                  ;	push rdi
+   538                                  ;	mov rax, 201
+   539                                  ;	xor rdi, rdi        
+   540                                  ;	syscall
+   541                                  ;	pop rdi
+   542 000003B2 C3                      ret 
