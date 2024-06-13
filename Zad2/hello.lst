@@ -331,7 +331,7 @@
    115                                  	; start time
    116                                  	
    117                                  
-   118 000000AD E8F8020000                  call timeToAX
+   118 000000AD E8F6020000                  call timeToAX
    119 000000B2 4989C5                      mov r13, rax
    120                                  
    121                                  
@@ -346,7 +346,7 @@
    129 000000CC E85C020000              		call CRC  
    130                                  
    131                                  	; end time
-   132 000000D1 E8D4020000              	call timeToAX
+   132 000000D1 E8D2020000              	call timeToAX
    133 000000D6 4989C6                      mov r14, rax
    134                                  
    135 000000D9 B800000000              	mov rax,0
@@ -710,27 +710,27 @@
    488 00000356 B0FF                    	mov al, 0xff
    489 00000358 48BB-                   	mov rbx , dataBin ; Message
    489 0000035A [1406000000000000] 
-   490 00000362 8A2C25[25070000]        	mov ch, [ dataLen ]
-   491 00000369 FEC5                    	inc ch
-   492 0000036B BA00000000              	mov rdx,0
+   490 00000362 8A2C25[25070000]        	mov ch, byte[ dataLen ]
+   491                                  	;inc ch
+   492 00000369 BA00000000              	mov rdx,0
    493                                  
    494                                  		; CRC !!!
    495                                  		oneCRC:
    496                                  	
-   497 00000370 448A0B                  		mov R9B, byte [rbx]   ; dh = *pMessage
-   498 00000373 48FFC3                  			 inc rbx    ; Message++
-   499 00000376 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
-   500 00000378 4430CA                  		xor dl, R9B		; index = dl			     	;		Index  = HiByte ^ *pMessage++; 
+   497 0000036E 448A0B                  		mov R9B, byte [rbx]   ; dh = *pMessage
+   498 00000371 48FFC3                  			 inc rbx    ; Message++
+   499 00000374 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+   500 00000376 4430CA                  		xor dl, R9B		; index = dl			     	;		Index  = HiByte ^ *pMessage++; 
    501                                  		
    502                                  		
-   503 0000037B 8AA2[00000000]          		mov ah,byte [ myHigh + rdx]
-   504 00000381 30C4                    		xor ah,al		;		HiByte = LoByte ^ aCRCHi[Index];
+   503 00000379 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+   504 0000037F 30C4                    		xor ah,al		;		HiByte = LoByte ^ aCRCHi[Index];
    505                                  		
-   506 00000383 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   506 00000381 8A82[00010000]          		mov al,byte [ myLow + rdx ]
    507                                  						;		LoByte = aCRCLo[Index]; 
    508                                  
-   509 00000389 FECD                    		dec ch
-   510 0000038B 75E3                    		jnz oneCRC
+   509 00000387 FECD                    		dec ch
+   510 00000389 75E3                    		jnz oneCRC
    511                                  		; CRC !!
    512                                  		; HiByte = AH
    513                                  		; LoByte = AL
@@ -738,29 +738,29 @@
    515                                  		;		return (HiByte << 8 | LoByte); 
    516                                  		
    517                                  	; / 10^6 loop	
-   518 0000038D 49FFCF                  	dec r15
-   519 00000390 75C2                    	jnz CRCLoops
+   518 0000038B 49FFCF                  	dec r15
+   519 0000038E 75C4                    	jnz CRCLoops
    520                                  	
    521                                  	; print result
-   522 00000392 48BF-                   	mov rdi, fresult
-   522 00000394 [6C07000000000000] 
-   523 0000039C 4889C6                  	mov rsi,rax
-   524 0000039F B800000000              	mov rax,0
-   525 000003A4 E8(00000000)            	call printf
+   522 00000390 48BF-                   	mov rdi, fresult
+   522 00000392 [6C07000000000000] 
+   523 0000039A 4889C6                  	mov rsi,rax
+   524 0000039D B800000000              	mov rax,0
+   525 000003A2 E8(00000000)            	call printf
    526                                  	
    527                                  	
-   528 000003A9 C3                      ret
+   528 000003A7 C3                      ret
    529                                  
    530                                   
    531                                   
    532                                  global timeToAX
    533                                  timeToAX:
    534                                  
-   535 000003AA E8(00000000)            	call clock_gettime
-   536 000003AF 4889F8                  mov rax,rdi
+   535 000003A8 E8(00000000)            	call clock_gettime
+   536 000003AD 4889F8                  mov rax,rdi
    537                                  ;	push rdi
    538                                  ;	mov rax, 201
    539                                  ;	xor rdi, rdi        
    540                                  ;	syscall
    541                                  ;	pop rdi
-   542 000003B2 C3                      ret 
+   542 000003B0 C3                      ret 

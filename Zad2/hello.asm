@@ -487,8 +487,8 @@ CRC:
 	mov ah, 0xff
 	mov al, 0xff
 	mov rbx , dataBin ; Message
-	mov ch, [ dataLen ]
-	inc ch
+	mov ch, byte[ dataLen ]
+	;inc ch
 	mov rdx,0
 
 		; CRC !!!
@@ -500,7 +500,7 @@ CRC:
 		xor dl, R9B		; index = dl			     	;		Index  = HiByte ^ *pMessage++; 
 		
 		
-		mov ah,byte [ myHigh + rdx]
+		mov ah,byte [ myHigh + rdx ]
 		xor ah,al		;		HiByte = LoByte ^ aCRCHi[Index];
 		
 		mov al,byte [ myLow + rdx ]
