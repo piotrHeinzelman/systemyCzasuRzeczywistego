@@ -1,0 +1,253 @@
+     1                                  extern printf
+     2                                  section .data
+     3                                  
+     4                                  
+     5                                  
+     6 00000000 00C1814001C0804101-     myHigh db 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x01, 0xc0, 0x80, 0x41, 0x00, 0xc1, 0x81, 0x40, 0x00, 0xc1, 0x81, 0x40, 0x01, 0xc0, 0x80, 0x41, 0x...
+     6 00000009 C0804100C1814001C0-
+     6 00000012 804100C1814000C181-
+     6 0000001B 4001C0804101C08041-
+     6 00000024 00C1814000C1814001-
+     6 0000002D C0804100C1814001C0-
+     6 00000036 804101C0804100C181-
+     6 0000003F 4001C0804100C18140-
+     6 00000048 00C1814001C0804100-
+     6 00000051 C1814001C0804101C0-
+     6 0000005A 804100C1814000C181-
+     6 00000063 4001C0804101C08041-
+     6 0000006C 00C1814001C0804100-
+     6 00000075 C1814000C1814001C0-
+     6 0000007E 804101C0804100C181-
+     6 00000087 4000C1814001C08041-
+     6 00000090 00C1814001C0804101-
+     6 00000099 C0804100C1814000C1-
+     6 000000A2 814001C0804101C080-
+     6 000000AB 4100C1814001C08041-
+     6 000000B4 00C1814000C1814001-
+     6 000000BD C0804100C1814001C0-
+     6 000000C6 804101C0804100C181-
+     6 000000CF 4001C0804100C18140-
+     6 000000D8 00C1814001C0804101-
+     6 000000E1 C0804100C1814000C1-
+     6 000000EA 814001C0804100C181-
+     6 000000F3 4001C0804101C08041-
+     6 000000FC 00C18140           
+     7 00000100 00C0C101C30302C2C6-     myLow  db 0x00, 0xc0, 0xc1, 0x01, 0xc3, 0x03, 0x02, 0xc2, 0xc6, 0x06, 0x07, 0xc7, 0x05, 0xc5, 0xc4, 0x04, 0xcc, 0x0c, 0x0d, 0xcd, 0x0f, 0xcf, 0xce, 0x0e, 0x0a, 0xca, 0xcb, 0x0b, 0xc9, 0x09, 0x08, 0xc8, 0xd8, 0x18, 0x19, 0xd9, 0x1b, 0xdb, 0xda, 0x1a, 0x1e, 0xde, 0xdf, 0x1f, 0xdd, 0x1d, 0x1c, 0xdc, 0x14, 0xd4, 0xd5, 0x15, 0xd7, 0x17, 0x16, 0xd6, 0xd2, 0x12, 0x13, 0xd3, 0x11, 0xd1, 0xd0, 0x10, 0xf0, 0x30, 0x31, 0xf1, 0x33, 0xf3, 0xf2, 0x32, 0x36, 0xf6, 0xf7, 0x37, 0xf5, 0x35, 0x34, 0xf4, 0x3c, 0xfc, 0xfd, 0x3d, 0xff, 0x3f, 0x3e, 0xfe, 0xfa, 0x3a, 0x3b, 0xfb, 0x39, 0xf9, 0xf8, 0x38, 0x28, 0xe8, 0xe9, 0x29, 0xeb, 0x2b, 0x2a, 0xea, 0xee, 0x2e, 0x2f, 0xef, 0x2d, 0xed, 0xec, 0x2c, 0xe4, 0x24, 0x25, 0xe5, 0x27, 0xe7, 0xe6, 0x26, 0x22, 0xe2, 0xe3, 0x23, 0xe1, 0x21, 0x20, 0xe0, 0xa0, 0x60, 0x61, 0xa1, 0x63, 0xa3, 0xa2, 0x62, 0x66, 0xa6, 0xa7, 0x67, 0xa5, 0x65, 0x64, 0xa4, 0x6c, 0xac, 0xad, 0x6d, 0xaf, 0x6f, 0x6e, 0xae, 0xaa, 0x6a, 0x6b, 0xab, 0x69, 0xa9, 0xa8, 0x68, 0x78, 0xb8, 0xb9, 0x79, 0xbb, 0x7b, 0x7a, 0xba, 0x...
+     7 00000109 0607C705C5C404CC0C-
+     7 00000112 0DCD0FCFCE0E0ACACB-
+     7 0000011B 0BC90908C8D81819D9-
+     7 00000124 1BDBDA1A1EDEDF1FDD-
+     7 0000012D 1D1CDC14D4D515D717-
+     7 00000136 16D6D21213D311D1D0-
+     7 0000013F 10F03031F133F3F232-
+     7 00000148 36F6F737F53534F43C-
+     7 00000151 FCFD3DFF3F3EFEFA3A-
+     7 0000015A 3BFB39F9F83828E8E9-
+     7 00000163 29EB2B2AEAEE2E2FEF-
+     7 0000016C 2DEDEC2CE42425E527-
+     7 00000175 E7E62622E2E323E121-
+     7 0000017E 20E0A06061A163A3A2-
+     7 00000187 6266A6A767A56564A4-
+     7 00000190 6CACAD6DAF6F6EAEAA-
+     7 00000199 6A6BAB69A9A86878B8-
+     7 000001A2 B979BB7B7ABABE7E7F-
+     7 000001AB BF7DBDBC7CB47475B5-
+     7 000001B4 77B7B67672B2B373B1-
+     7 000001BD 7170B0509091519353-
+     7 000001C6 529296565797559594-
+     7 000001CF 549C5C5D9D5F9F9E5E-
+     7 000001D8 5A9A9B5B9959589888-
+     7 000001E1 4849894B8B8A4A4E8E-
+     7 000001EA 8F4F8D4D4C8C448485-
+     7 000001F3 458747468682424383-
+     7 000001FC 41818040           
+     8                                   
+     9 00000200 5242583A5243582025-     ftext      db   "RBX:RCX %x",0
+     9 00000209 7800               
+    10 0000020B 3A25780A0D00            ftext2     db   ":%x",10,13,0
+    11 00000211 0A0D5241583A25780A-     ftexta     db   10,13,"RAX:%x",10,13,0
+    11 0000021A 0D00               
+    12                                  
+    13 0000021C FF                      crcHigh	   db   0xff;
+    14 0000021D FF                      crcLow	   db   0xff;
+    15                                  
+    16                                  
+    17                                  
+    18                                  
+    19                                  
+    20                                  section .text
+    21                                  global main
+    22                                  main:
+    23                                  
+    24                                  ; printF
+    25                                  ;	mov rax, 0
+    26                                  ;	mov rdi, ftext
+    27                                  ;	mov rsi, 0;value
+    28                                  ;	call printString
+    29                                  
+    30                                  
+    31                                   
+    32                                   
+    33                                  
+    34                                  	
+    35                                  	
+    36                                  
+    37 00000000 BB00000000              mov rbx,0
+    38 00000005 B900000000              mov rcx,0 
+    39 0000000A BA00000000              mov rdx,0
+    40                                  
+    41                                  ; CRC
+    42                                  		CRC_next:
+    43                                  		
+    44 0000000F B4FF                    		mov ah,0xff; HI
+    45 00000011 B0FF                    		mov al,0xff; LO
+    46                                  
+    47 00000013 48FFC1                  		inc rcx
+    48 00000016 7309                    		jnc noIncRbx
+    49 00000018 48FFC3                  		inc rbx
+    50 0000001B 0F82B6000000            		jc  exit
+    51                                  		noIncRbx:
+    52                                  		; data
+    53                                  		; RBX:RCX
+    54                                  		
+    55                                  ; -----------------------------
+    56                                  	
+    57                                  		;mov R9B, byte [rbx]   ; dh = *pMessage
+    58                                  		;	 inc rbx    ; Message++
+    59                                  			 
+    60                                  		; cl ch	 
+    61 00000021 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+    62 00000023 30CA                    		xor dl, cl	; cl <-- next char	; index = dl
+    63                                  		
+    64 00000025 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+    65 0000002B 30C4                    		xor ah,al
+    66 0000002D 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+    67                                  		
+    68 00000033 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+    69 00000035 30EA                    		xor dl, ch	; cl <-- next char	; index = dl
+    70                                  		
+    71 00000037 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+    72 0000003D 30C4                    		xor ah,al
+    73 0000003F 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+    74                                  
+    75                                  		; 2cl,2ch
+    76 00000045 48C1C910                		ROR rcx,16
+    77                                  		
+    78 00000049 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+    79 0000004B 30CA                    		xor dl, cl	; cl <-- next char	; index = dl
+    80                                  		
+    81 0000004D 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+    82 00000053 30C4                    		xor ah,al
+    83 00000055 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+    84                                  		
+    85 0000005B 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+    86 0000005D 30EA                    		xor dl, ch	; cl <-- next char	; index = dl
+    87                                  		
+    88 0000005F 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+    89 00000065 30C4                    		xor ah,al
+    90 00000067 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+    91                                  	 
+    92 0000006D 48C1C910                		ROR rcx,16
+    93                                  		
+    94                                  		; rbx
+    95 00000071 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+    96 00000073 30DA                    		xor dl, bl	; cl <-- next char	; index = dl
+    97                                  		
+    98 00000075 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+    99 0000007B 30C4                    		xor ah,al
+   100 0000007D 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   101                                  		
+   102 00000083 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+   103 00000085 30FA                    		xor dl, bh	; cl <-- next char	; index = dl
+   104                                  		
+   105 00000087 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+   106 0000008D 30C4                    		xor ah,al
+   107 0000008F 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   108                                  
+   109                                  		; 2cl,2ch
+   110 00000095 48C1CB10                		ROR rbx,16
+   111                                  		
+   112 00000099 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+   113 0000009B 30DA                    		xor dl, bl	; cl <-- next char	; index = dl
+   114                                  		
+   115 0000009D 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+   116 000000A3 30C4                    		xor ah,al
+   117 000000A5 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   118                                  		
+   119 000000AB 88E2                    		mov dl, ah      ; index = HiByte ^ *pMessage
+   120 000000AD 30FA                    		xor dl, bh	; cl <-- next char	; index = dl
+   121                                  		
+   122 000000AF 8AA2[00000000]          		mov ah,byte [ myHigh + rdx ]
+   123 000000B5 30C4                    		xor ah,al
+   124 000000B7 8A82[00010000]          		mov al,byte [ myLow + rdx ]
+   125                                  	 
+   126 000000BD 48C1CB10                		ROR rbx,16
+   127                                  		
+   128                                  		; <-
+   129                                  		
+   130 000000C1 483D7CA70000            		cmp RAX,0xA77C
+   131 000000C7 0F8542FFFFFF            		jnz CRC_next
+   132                                  		
+   133 000000CD E812000000              		call myPrint 
+   134 000000D2 E938FFFFFF              		jmp CRC_next
+   135                                  		
+   136                                  
+   137                                  
+   138                                   ; ---- funkcje 
+   139                                  ; ---------------------------------
+   140                                  
+   141                                   
+   142                                  
+   143                                  global exit
+   144                                  exit:
+   145 000000D7 B83C000000              	mov rax,60
+   146 000000DC BF00000000              	mov rdi,0
+   147 000000E1 0F05                    	syscall
+   148                                  
+   149 000000E3 C3                      ret
+   150                                  
+   151                                  
+   152                                  global myPrint
+   153                                  myPrint:
+   154 000000E4 50                      	push rax
+   155 000000E5 53                      	push rbx
+   156 000000E6 51                      	push rcx
+   157 000000E7 52                      	push rdx
+   158                                  	
+   159 000000E8 57                      	push rdi
+   160 000000E9 56                      	push rsi
+   161                                  
+   162 000000EA 53                      	push rbx
+   163 000000EB 51                      	push rcx
+   164                                  
+   165 000000EC 4889C6                  	mov rsi, rax
+   166 000000EF B800000000              	mov rax, 0
+   167 000000F4 48BF-                   	mov rdi, ftexta
+   167 000000F6 [1102000000000000] 
+   168 000000FE E8(00000000)            	call printf
+   169                                  	
+   170 00000103 59                      	pop rcx
+   171 00000104 4889CE                  	mov rsi, rcx	
+   172 00000107 B800000000              	mov rax, 0
+   173 0000010C 48BF-                   	mov rdi, ftext
+   173 0000010E [0002000000000000] 
+   174 00000116 E8(00000000)            	call printf
+   175                                  	
+   176 0000011B 5B                      	pop rbx
+   177 0000011C 4889DE                  	mov rsi, rbx
+   178 0000011F B800000000              	mov rax, 0
+   179 00000124 48BF-                   	mov rdi, ftext2
+   179 00000126 [0B02000000000000] 
+   180 0000012E E8(00000000)            	call printf
+   181                                  
+   182 00000133 5E                      	pop rsi
+   183 00000134 5F                      	pop rdi
+   184 00000135 5A                      	pop rdx
+   185 00000136 59                      	pop rcx
+   186 00000137 5B                      	pop rbx
+   187 00000138 58                      	pop rax
+   188 00000139 C3                      ret
+   189                                  
+   190                                  
+   191                                  
+   192                                   
