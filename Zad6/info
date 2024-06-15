@@ -1,3 +1,8 @@
+Przykładowy kod klucza o CRC = 0xA77C
+00000000000000000000000000311FBB
+
+poniżej pozostałe
+
 [john@arch Zad6]$ ./crc06 | grep RAX:A77C
 RBX:RCX 0,DE6F, RAX:A77C
 RBX:RCX 0,11FAF, RAX:A77C
