@@ -1,3 +1,18 @@
+liczba kombinacji hasla (128 bitów) = 2^128
+każde hasło pasuje do jakiegoś CRC, a CRC jest 16-bitowy
+
+a zatem 2^128 / 2^16 = 2^112 - tyle haseł pasuje do jednego CRC
+
+nawet gdybyśmy znali drugi CRC (również 16 bitów)
+do z listy haseł pasujących do A77C (2^112) po przyporządkowaniu drugiego CRC
+otrzymamy mniejszą listę 2^112/2^16 = 2^96 - tyle haseł pasuje do obu CRC jednocześnie.
+
+aby otworzyć zamek - trzeba znać 128 bitów klucza = pewność otwarcia
+lub 112 bitów klucza i 16 bitów CRC = statystycznie powinno wystarczyć
+lub 96 bitów klucza, i oba CRC = statystycznie powinno wystarczyć
+
+
+
 Przykładowy kod klucza o CRC = 0xA77C
 00000000000000000000000000311FBB
 
