@@ -1,0 +1,9 @@
+# ninja log v6
+6	500	7402786018751765	p1_autogen/timestamp	30d2408235523708
+6	500	7402786018751765	p1_autogen/mocs_compilation.cpp	30d2408235523708
+6	500	7402786018751765	C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/p1/build/Desktop_Qt_6_7_1_MinGW_64_bit-Release/p1_autogen/timestamp	30d2408235523708
+6	500	7402786018751765	C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/p1/build/Desktop_Qt_6_7_1_MinGW_64_bit-Release/p1_autogen/mocs_compilation.cpp	30d2408235523708
+507	1816	7402786019280302	CMakeFiles/p1.dir/main.cpp.obj	5cb619b54e8833f7
+504	1817	7402786019280302	CMakeFiles/p1.dir/p1_autogen/mocs_compilation.cpp.obj	8ddf4649eda2e9ef
+509	1951	7402786019280302	CMakeFiles/p1.dir/dialog.cpp.obj	451c32e7dfbd4704
+1952	2099	7402786033794583	p1.exe	55adab7348f81c14

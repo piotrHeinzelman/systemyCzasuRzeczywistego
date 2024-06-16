@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6913C3-8556-4B44-932B-91F4FBE67F1C}|proj3.vcxproj|C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       $ \u008D )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{2B6913C3-8556-4B44-932B-91F4FBE67F1C}|proj3.vcxproj|solutionrelative:proj3.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       $ \u008D )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6913C3-8556-4B44-932B-91F4FBE67F1C}|proj3.vcxproj|C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B6913C3-8556-4B44-932B-91F4FBE67F1C}|proj3.vcxproj|solutionrelative:proj3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "proj3.cpp",
+              "DocumentMoniker": "C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.cpp",
+              "RelativeDocumentMoniker": "proj3.cpp",
+              "ToolTip": "C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.cpp",
+              "RelativeToolTip": "proj3.cpp",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-16T14:38:06.489Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "proj3.rc - IDC_PROJ3 - Menu",
+              "DocumentMoniker": "C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.rc",
+              "RelativeDocumentMoniker": "proj3.rc",
+              "ToolTip": "C:\\Users\\Bill\\Desktop\\SystemyCzasuRzeczywistego\\WinC\u002B\u002B\\MSVisualStudio\\W3\\proj3\\proj3.rc - IDC_PROJ3 - Menu",
+              "RelativeToolTip": "proj3.rc - IDC_PROJ3 - Menu",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-16T14:38:26.22Z",
+              "EditorCaption": " - IDC_PROJ3 - Menu"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
