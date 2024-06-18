@@ -29,10 +29,90 @@ void Dialog::on_pushButton_released()
 {
     QString data = textline1->text();
     QString cycleNumString = textline2->text();
-    long cycleNum = (long) cycleNumString;
+    int CRC=0;
+    QByteArray CRCstr="0x0000";
+    bool ok;
+    long cycleNum = cycleNumString.toLong( &ok, 10);
+    if (cycleNum==NULL || cycleNum<0) { cycleNum=1; }
+    long tmp;
+    int a=0;
+    int b=0;
     this->textCRC->setText( data );
-    this->textCycle->setText( cycleNum );
+    this->textCycle->setText( QLocale().toString( cycleNum ) );
+
+
+    this->pushButton->setText("...");
+    QElapsedTimer timer;
+    timer.start();
+
+    tmp=cycleNum;
+    while( tmp-- ){
+        //int CRC = assembly();
+        CRC=calculateCRC();
+        //for (int i=0;i<99;i++){ int j=0;j++;j++;j=j+j/j+j/j; }
+        //this->textCRC->setText( QLocale().toString( cycleNum ) );
+    }
+     b=CRC;
+
+     a=b%16;
+     b=(b-a)/16;
+     if (b<0){b=0;}
+     if (a>9){a=a+7;}
+     if (a<0){a=0;}
+     CRCstr[5]=char(48+a);
+
+     a=b%16;
+     b=(b-a)/16;
+     if (b<0){b=0;}
+     if (a>9){a=a+7;}
+     if (a<0){a=0;}
+     CRCstr[4]=char(48+a);
+
+     a=b%16;
+     b=(b-a)/16;
+     if (b<0){b=0;}
+     if (a>9){a=a+7;}
+     if (a<0){a=0;}
+     CRCstr[3]=char(48+a);
+
+     a=b%16;
+     b=(b-a)/16;
+     if (b<0){b=0;}
+     if (a>9){a=a+7;}
+     if (a<0){a=0;}
+     CRCstr[2]=char(48+a);
+
+
+    this->textCRC->setText( CRCstr);
+    this->textTime->setText(  QLocale().toString(timer.elapsed()) + " [ms]" ) ;
+    this->textCycle->setText(  QLocale().toString(timer.elapsed()/(1.0*cycleNum)) + " [ms]" ) ;
+    this->pushButton->setText("Start");
+
+// http://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html
+
+    /*
+
+ QString str = "FF";
+ bool ok;
+
+ long hex = str.toLong(&ok, 16);     // hex == 255, ok == true
+ long dec = str.toLong(&ok, 10);
+
+     */
 
 
 }
 
+long Dialog:: calculateCRC(){
+    // https://www.codeproject.com/Articles/15971/Using-Inline-Assembly-in-C-C
+
+    int no = 10, val ;
+    asm ("movl %1, %%ebx;"
+        "movl %%ebx, %0;"
+        : "=r" ( val )        /* output */
+        : "r" ( no )         /* input */
+        : "%ebx"         /* clobbered register */
+        );
+
+    return val;
+}
