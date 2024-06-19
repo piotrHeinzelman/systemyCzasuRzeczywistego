@@ -1,0 +1,9 @@
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/Proj1.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/list_install_components.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/install.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/install/local.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/install/strip.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/Proj1_autogen_timestamp_deps.dir
+C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/CMakeFiles/Proj1_autogen.dir

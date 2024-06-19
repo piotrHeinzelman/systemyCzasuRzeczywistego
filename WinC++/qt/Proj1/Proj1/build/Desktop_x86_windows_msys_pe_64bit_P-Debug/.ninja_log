@@ -1,0 +1,9 @@
+# ninja log v6
+6	523	7405247280294924	Proj1_autogen/timestamp	131ddd80af92ebbb
+6	523	7405247280294924	Proj1_autogen/mocs_compilation.cpp	131ddd80af92ebbb
+6	523	7405247280294924	C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/Proj1_autogen/timestamp	131ddd80af92ebbb
+6	523	7405247280294924	C:/Users/Bill/Desktop/SystemyCzasuRzeczywistego/WinC++/qt/Proj1/Proj1/build/Desktop_x86_windows_msys_pe_64bit_P-Debug/Proj1_autogen/mocs_compilation.cpp	131ddd80af92ebbb
+527	2206	7405247280880650	CMakeFiles/Proj1.dir/Proj1_autogen/mocs_compilation.cpp.obj	e4bfc749aa0c4193
+530	2247	7405247280901093	CMakeFiles/Proj1.dir/main.cpp.obj	9fa2805c7ab82917
+532	2351	7405247280901093	CMakeFiles/Proj1.dir/dialog.cpp.obj	1ecdb37da93705de
+2351	2516	7405247299108681	Proj1.exe	965a384d40b33749
