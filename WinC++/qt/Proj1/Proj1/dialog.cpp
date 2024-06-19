@@ -107,13 +107,14 @@ long Dialog:: calculateCRC( QString* data, long cyclesNum ){
 
     long num=cyclesNum;
     int  val ;
-    asm ("movl %0, %%eax;"
-         "movl %1, %%ebx;"
-         "add  %%ebx, %%eax;"
-         "movl %%ebx , %0;"
+    asm ("movl %0,%%eax ;"
+         "movl %1,%%ebx;"
+         "addl %%ebx, %%eax;"
+         "movl %%eax,%0;"
+
         : "=r" ( val )        /* output */
         : "r" ( data, num )         /* input */
-        : "%ebx"         /* clobbered register */
+        : "ebx"         /* clobbered register */
         );
 
     return val;
