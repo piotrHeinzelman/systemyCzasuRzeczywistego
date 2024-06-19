@@ -48,7 +48,7 @@ void Dialog::on_pushButton_released()
     tmp=cycleNum;
     while( tmp-- ){
         //int CRC = assembly();
-        CRC=calculateCRC();
+        CRC=calculateCRC( &data, cycleNum );
         //for (int i=0;i<99;i++){ int j=0;j++;j++;j=j+j/j+j/j; }
         //this->textCRC->setText( QLocale().toString( cycleNum ) );
     }
@@ -76,8 +76,7 @@ void Dialog::on_pushButton_released()
      CRCstr[3]=char(48+a);
 
      a=b%16;
-     b=(b-a)/16;
-     if (b<0){b=0;}
+
      if (a>9){a=a+7;}
      if (a<0){a=0;}
      CRCstr[2]=char(48+a);
@@ -103,14 +102,17 @@ void Dialog::on_pushButton_released()
 
 }
 
-long Dialog:: calculateCRC(){
+long Dialog:: calculateCRC( QString* data, long cyclesNum ){
     // https://www.codeproject.com/Articles/15971/Using-Inline-Assembly-in-C-C
 
-    int no = 10, val ;
-    asm ("movl %1, %%ebx;"
-        "movl %%ebx, %0;"
+    long num=cyclesNum;
+    int  val ;
+    asm ("movl %0, %%eax;"
+         "movl %1, %%ebx;"
+         "add  %%ebx, %%eax;"
+         "movl %%ebx , %0;"
         : "=r" ( val )        /* output */
-        : "r" ( no )         /* input */
+        : "r" ( data, num )         /* input */
         : "%ebx"         /* clobbered register */
         );
 

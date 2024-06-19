@@ -19,7 +19,7 @@ class Dialog : public QDialog
 public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    long calculateCRC();
+    long calculateCRC( QString *data, long cyclesNum );
 
 private slots:
     void on_pushButton_released();
@@ -32,5 +32,7 @@ private:
     QLabel      *textTime;
     QLineEdit   *textline1;
     QLineEdit   *textline2;
+    QString     *data;
+    long         cycleNum;
 };
 #endif // DIALOG_H
