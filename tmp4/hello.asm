@@ -4,7 +4,11 @@ extern DialogBoxA
 extern MessageBoxExA
 extern ShowWindow
 extern CreateWindowExA
-extern GetSystemTime
+extern GetLocalTime
+extern _mktime64
+extern  puts
+extern GetSystemTimeAsFileTime
+
 
 extern printf
 ;extern GetFileTitleA
@@ -20,13 +24,36 @@ section .data
 	cap db "Windows 10 mowi:",10,13,0;
 	par db "                  ",10,13,0;
 	
-	inputString db 260 dup 0;
+	regStr db "....++++....++++",10,13,0
+	
+	inputString db 260 dup 0,10,13,0;
 	inputStringLen db 0;
 	
 	timeRaport        db '%0.2d.%0.2d.%d-%0.2d.%0.2d.%0.2d',0; 
 	
-section	.data?
-	_st db "???????????????????";
+	cycles dq 100000000000000000;
+	
+	
+_SYSTEMTIME_Struct_Year db 0;
+	_one db 0;
+	_two db 0;
+	_three db 0;
+	_four db 0;
+	_Minute db 0;
+	_Second db 0;
+	_Milliseconds db 0;
+	
+	
+;	typedef struct _SYSTEMTIME {
+;	WORD wYear;
+;	WORD wMonth;
+;	WORD wDayOfWeek;
+;  WORD wDay;
+;  WORD wHour;
+;  WORD wMinute;
+;  WORD wSecond;
+;  WORD wMilliseconds;
+;} SYSTEMTIME, *PSYSTEMTIME, *LPSYSTEMTIME;
 	
 	
 section .text
@@ -35,6 +62,28 @@ section .text
 main:
 	push rbp
 	mov rbp,rsp
+	
+	; console write x64 windows
+	;  sub     rsp, 28h                        ; Reserve the shadow space
+    ;    mov     rcx, msg                    ; First argument is address of message
+    ;    call    puts                            ; puts(message)
+    ;    add     rsp, 28h                        ; Remove shadow space
+    ;    ret
+	
+	;
+
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	;[rdx+8] <- tu wskaznik na %1, pierwszy parametr wywolania
 	; A190B
@@ -49,49 +98,64 @@ main:
 	mov rsi,inputString
 	call printString;
 	
+	
+	
+	; time test
+	mov rax,0	
+	mov rbx,0
+	mov rcx,_SYSTEMTIME_Struct_Year	
+	mov rdx,_SYSTEMTIME_Struct_Year
+	;call GetLocalTime
+	call GetSystemTimeAsFileTime
+	
+	mov rbx,[_one];
+
+		; fun...
+		mov rdx,10000000000  ;
+		fun:
+		dec rdx    ;
+		cmp rdx,0  ;
+		jne fun
+
+
+	mov rdx,_SYSTEMTIME_Struct_Year
+	call GetSystemTimeAsFileTime
+	mov rax,[_one];
+	sub rax,rbx ; delta time to rax
+	
+	
+
+	;mov rax,0x1122334455667788 ;
+	;mov rax,0
+	;mov ax,word [_one]
+	mov rdi,regStr
+	call register64bitToStringHEX ; rax value, rdi destnation address
+	
+ 	mov rsi,regStr
+	call printString;
+	
+	
 	; time
-    mov     edx,[_st]
+    ;mov     edx,[_st]
     ;movzx   eax,WORD PTR SYSTEMTIME.wSecond[edx]
     ;push    OFFSET str1
     ;call    crt_printf
     ;add     esp,4*7  
 	
 	;mov     edx,OFFSET _st ; structure SYSTEMTIME. (Values here are binary: year, month, day, hour, etc.)
-	call GetSystemTime;
+	;call GetSystemTime;
 
-	;int 21
+ 
 	
 	; // https://stackoverflow.com/questions/44081355/input-output-in-x64-assembly
 	; https://stackoverflow.com/questions/44081355/input-output-in-x64-assembly
+	; https://www.davidgrantham.com/nasm-information/
+	; https://sonictk.github.io/asm_tutorial/
+	; https://stackoverflow.com/questions/65619337/why-does-createwindow-in-64-bit-visual-studio-c-destroy-itself-on-creation
+	; https://board.flatassembler.net/topic.php?t=18321 
 	
-
-	
-	
-	; int MessageBoxA(
-	; HWND hWnd okno nadrzedne
-	; LPCSTR plText tekst do wyswietlenia
-	; LPCSTR lpCaption tytul okna
-	; UINT	uType	typ okna
-	; )
- 
-	
-	
-	mov rcx,0
-	;lea rdx,[msg]
-	mov rdx,[rdx+8]
-	lea r8,[cap]
-	mov r9d,0	; okno w przyciskiem okna
-	sub rsp,32		; przstrzen ukryta
-	call MessageBoxA; zwraca IDOK=1 jesli kliknieto okna
-	add rsp,32
-	
-;	mov rcx,0
-;	lea rdx,[msg]
-;	lea r8,[cap]
-;	mov r9d,0	; okno w przyciskiem okna
-;	sub rsp,32		; przstrzen ukryta
-;	call MessageBoxA; zwraca IDOK=1 jesli kliknieto okna
-;	add rsp,32
+	xor   ECX, ECX
+	call  ExitProcess
 	
 leave
 ret
@@ -207,5 +271,77 @@ copyString:
 	pop rbx
 	pop rax
 	
+	leave
+ret
+
+
+
+
+
+global register64bitToStringHEX ; rax value, rdi destnation address
+register64bitToStringHEX:
+	push rbp
+	mov rbp,rsp
+
+	rol RAX,16
+	call register16bitToStringHEX
+	add rdi,4	
+	
+	rol RAX,16
+	call register16bitToStringHEX
+	add rdi,4
+	
+	rol RAX,16
+	call register16bitToStringHEX
+	add rdi,4
+	
+	rol RAX,16
+	call register16bitToStringHEX
+
+
+	leave
+ret
+
+
+
+
+global register16bitToStringHEX ; rax value, rdi destnation address
+register16bitToStringHEX:
+	push rbp
+	mov rbp,rsp
+
+	push rax
+	push rbx
+	push rcx
+	push rdi
+	
+	;add rdi,4
+	mov cl,0x4
+
+
+	register16bitToString_loop:
+	rol ax,4
+	mov bl,al
+	and bl,0x0f
+	add bl,0x30
+	cmp bl,0x39
+	JNA no_add
+	; nie wieksze
+	add bl,0x7
+	no_add:
+	mov [rdi],bl
+	
+	inc rdi
+	
+	dec cl
+	cmp cl,0
+	jnz register16bitToString_loop
+	
+
+	pop rdi
+	pop rcx	
+	pop rbx
+	pop rax
+
 	leave
 ret
