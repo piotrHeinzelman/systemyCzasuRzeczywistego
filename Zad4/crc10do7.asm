@@ -35,7 +35,7 @@ section .data
 	
 	timeRaport        db "                ",10,13,0; 
 	
-	cycles dq 100000000000;
+	cycles dq 10000000;
 	
  
 	

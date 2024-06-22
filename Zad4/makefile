@@ -1,8 +1,8 @@
-crc10do12.exe: crc10do12.obj
-	g++ crc10do12.obj -o crc10do12.exe
+crc10do8.exe: crc10do8.obj
+	g++ crc10do8.obj -o crc10do8.exe
 
 
-crc10do12.obj: crc10do12.asm
-	nasm -f win64 crc10do12.asm -o crc10do12.obj	
+crc10do8.obj: crc10do8.asm
+	nasm -f win64 crc10do8.asm -o crc10do8.obj	
 
  
